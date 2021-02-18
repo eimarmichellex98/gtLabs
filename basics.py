@@ -1,50 +1,27 @@
 # Eimar Michelle Quinn
 # Python Basics
-# 17/02/2021
+# 18/02/2021
 
-# println
-print("Hello, World!")
+# number to calculate factorial of
+# n = 20
+def factorial(n):
+    """Number to calculate factorial of."""
+    # copy value
+    m = n
+    # running total - eventually factorial
+    total = 1
 
-#a = 1 # int
-#b = 1.0 # float
-#s = "Hello, World from a string!" # string
-#t = 'Hello, from a different string' # string
+    # while loop to do multiplications
+    while m > 0:
+        total = total * m
+        m = m - 1
+    # return the answer
+    return total
 
-#print(a, b, s, t)
+# print(total)
 
-# print(s[:2.])
+# test function def
+n = 20
+# calculate the factorial of n
+ print(f"The factorial of {n} is {factorial{n}}.") # not working :/
 
-x = [1, 2, 3]
-#print(x)
-#print(x[0])
-#print(x[2])
-#print(x[-1])
-
-# for loop
-#for i in x:
-#    print(i)
-#    print (i +i)
-
-# for loop, syntax asking for every second element
-#for i in x[::2]:
-#    print(i)
-#    print(i + i)
-
-# loop through integers, list view
-#for i in range(10):
-#    print(i)
-
-# dictionary
-d = {"no_wheels": 4, "make": "Skoda"}
-print(d["no_wheels"])
-
-d["model"] = "Superb"
-
-print(d["model"])
-
-# list comprehension
-r = [1, 2, 3, 4]
-print(r)
-
-s = [i*i for i in r]
-print(s)
